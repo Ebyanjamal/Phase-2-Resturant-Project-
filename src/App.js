@@ -1,19 +1,23 @@
 import { Route,Routes } from "react-router-dom";
-import PageCard from "./Componets/PageCard";
-import PageList from "./Componets/PageList";
-import RenderPage from "./Componets/RenderPage";
+import About from "./Componets/About";
+import Home from "./Componets/Home";
+import Contact from "./Componets/Contact";
 import Search from "./Componets/Search"
-import Page from "./Componets/Page";
+import Information from "./Componets/Information";
+
+
+
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/home" element = {<PageList/>}/>
-        <Route path="/About" element = {<PageCard/>}/>
-        <Route path="/Information" element={<Page/>}/>
-        <Route path="/Contact" element ={<RenderPage/>}/>
+        <Route path="/home" element = {<Home/>}/>
+        <Route path="/About" element = {<About/>}/>
+        <Route path="/Information" element={<Information/>}/>
+        <Route path="/Contact" element ={<Contact/>}/>
       </Routes>
+      
     </div>
   );
 }
